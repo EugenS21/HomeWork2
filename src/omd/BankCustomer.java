@@ -2,17 +2,17 @@ public class BankCustomer extends BankDetails
     implements ICreditCard{
 
     @Override
-    public int getCreditNumber() {
-        return 100;
+    public void getCreditNumber(int cardNumber) {
+        setCreditNumber(cardNumber);
     }
 
     @Override
-    public int getAvailableMoney() {
-        return 0;
+    public void getAvailableMoney(int availableMoney) {
+        setAvailableMoney(availableMoney);
     }
 
     @Override
-    public String getNameData() {
-        return "Default Data";
+    public void getNameData(String clientData) {
+        setNameData(clientData);
     }
 }

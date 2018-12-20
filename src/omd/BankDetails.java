@@ -1,20 +1,17 @@
 public class BankDetails {
-    private int availableMoney;
-    private int accountNumber;
-    private String clientInfo;
+    public int availableMoney;
+    public int accountNumber;
+    public String clientInfo;
 
-    private ICreditCard newCreditCard;
-
-
-    public void setCreditNumber() {
-        this.accountNumber = newCreditCard.getCreditNumber();
+    public void setCreditNumber(int number) {
+        this.accountNumber = number;
     }
 
-    public void setAvailableMoney() {
-        this.availableMoney = newCreditCard.getAvailableMoney();
+    public void setAvailableMoney(int money) {
+        this.availableMoney = money;
     }
 
     public void setNameData(String nameSurname) {
-        this.clientInfo = newCreditCard.getNameData();
+        this.clientInfo = nameSurname;
     }
 }
